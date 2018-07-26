@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+}
+
+.header {
+	font-family: 'Cuprum', Arial, sans-serif;
+}
+
+.top-menu {
+	color: #ffffff;
+	font-size: 17px;
+}
+
+.logo {
+	font-size: 24px;
+
+	padding: 5px;
+	margin: 0;
+	background-color: #ee3643;
+}
+
+.contacts p {
+	font-size: 14px;
+	color: #32425c;
+}
+
+.contacts span {
+	font-size: 21px;
+	color: #ee3643;
+}
+
+.user-navigation {
+	font-size: 21px;
+}
+
+.visually-hidden {
+	width: 0;
+	height: 0;
+	font-size: 0;
+}
+
+.about-heading {
+	font-style: italic;
+	font-size: 16px;
+	color:#ee3643;
+}
+
+.main-navigation {
+	color: #ffffff;
+	font-size: 17px;
+
+	background-color: #32425c;
+}
+
+.nav li {
+	display: inline-block;
+}
