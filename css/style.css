@@ -1,11 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #ffffff;
 
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
+
 }
 
 a {
@@ -20,10 +22,6 @@ ul {
 h1,
 h2 {
 	text-transform: uppercase;
-}
-
-.header {
-	font-family: 'Cuprum', Arial, sans-serif;
 }
 
 .top-menu {
@@ -74,4 +72,55 @@ h2 {
 
 .nav li {
 	display: inline-block;
+}
+
+.promo {
+	color: #ffffff;
+}
+
+.promo h3 {
+	font-size: 24px;
+}
+
+.promo a {
+	background-color: rgba(0, 0, 0, 0.1);
+
+	font-size: 14px;
+}
+
+.promo a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo a:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item-1 {
+	background-color: #ffbf47;
+}
+
+.item-2 {
+	background-color: #3bbce3;
+}
+
+.item-3 {
+	background-color: #dc91d8;
+}
+
+.item-4 {
+	background-color: #8ed78f;
+}
+
+.item-5 {
+	background-color: #ffc047;
+}
+
+.popular h1,
+.brands h1 {
+	color: #32425c;
+}
+
+.popular .list {
+	font-family: 'PT Sans', Arial, sans-serif;
 }
