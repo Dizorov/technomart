@@ -121,6 +121,23 @@ h2 {
 	color: #32425c;
 }
 
+.red-button {
+	background-color:#ee3643;
+
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
 .popular .list {
 	font-family: 'PT Sans', Arial, sans-serif;
+
+}
+
+.popular h3 {
+	font-size: 18px;
+}
+
+.popular p {
+	font-size: 17px;
 }
