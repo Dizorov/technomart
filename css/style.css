@@ -54,12 +54,30 @@ h2 {
 	width: 100%;
 }
 
-.top-menu-item a{
+.top-menu-item a {
 	padding: 13px 20px;
+}
+
+.top-menu-item a:hover {
+	background-color: #212a3a;
+}
+
+.top-menu-item a:active {
+	background-color: #212a3a;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .page-header-top .green-btn {
 	background-color: #63a63e;
+}
+
+.page-header-top .green-btn:hover {
+	background-color: #5fbb2d;
+}
+
+.page-header-top .green-btn:active {
+	background-color: #518534;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .page-header-top .container{
@@ -103,6 +121,7 @@ h2 {
 	justify-content: space-between;
 }
 
+
 .about {
 	color: #ee3643;
 	font-size: 16px;
@@ -133,7 +152,6 @@ h2 {
 .user-navigation {
 	display: flex;
 	justify-content: space-between;
-
 	margin-top: 25px;
 }
 
@@ -145,22 +163,43 @@ h2 {
 	margin: 0 5px;
 }
 
+.user-navigation .user-btn:hover {
+	color: #ee3643;
+}
+
+.user-navigation .user-btn:active {
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .main-navigation {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
 	background-color: #32425c;
 	border-bottom: 5px solid #293449;
-	padding: 0 22px;
-	display: flex;
+	padding: 0 25px 0 22px;
 }
 
 .main-navigation .item {
+	display: flex;
+}
+
+.main-navigation .item a {
 	padding: 20px 30px;
 }
 
+.main-navigation .item a:hover {
+	background-color: #293449;
+}
 
-
+.main-navigation .item a:active {
+	background-color: #1d2739;
+	box-shadow: 0 5px 0 0 #1d2739;
+	color: rgba(255, 255, 255, 0.5);
+}
 /*
 
 
