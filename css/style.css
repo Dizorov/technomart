@@ -1,11 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #ffffff;
-
+	min-width: 1200px;
+	line-height: 1em;
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 13px;
-	line-height: 24px;
 	color: #000000;
 
 }
@@ -24,18 +23,146 @@ h2 {
 	text-transform: uppercase;
 }
 
-.top-menu {
+.section-header {
+	color: #32425c;
+	font-size: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.page-header {
+	background-color: #f3f7f8;
+	padding-bottom: 60px;
+}
+
+.page-header-top {
+	background-color: #32425c;
 	color: #ffffff;
+	font-size: 17px;
+	padding: 0;
+	width: 100%;
+}
+
+.top-menu-item a{
+	padding: 13px 20px;
+}
+
+.page-header-top .green-btn {
+	background-color: #63a63e;
+}
+
+.page-header-top .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-header-top form input {
+	border: none;
+	background: transparent;
+	color: #ffffff;
+	padding: 11px 5px 14px 20px;
+	align-self: flex-start;
+	line-height: 18px;
 	font-size: 17px;
 }
 
 .logo {
 	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: center;
 
-	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 8px;
 	margin: 0;
+	width: 220px;
 	background-color: #ee3643;
+	box-shadow: 0 5px 0 0 #b52933;
 }
+
+.page-header-top .header-top-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-header-middle {
+	padding-top: 46px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about {
+	color: #ee3643;
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	width: 200px;
+	margin-left: 53px;
+}
+
+.contacts {
+	color: #32425c;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.contacts span {
+	padding: 9px 0 9px 40px;
+	width: 234px;
+	border: 3px solid #ffffff;
+	display: block;
+
+	color: #ee3643;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.user-navigation {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 25px;
+}
+
+.user-navigation .user-btn {
+	font-size: 21px;
+	line-height: 21px;
+	background-color: #ffffff;
+	padding: 8px 25px;
+	margin: 0 5px;
+}
+
+.main-navigation {
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 17px;
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+	padding: 0 22px;
+	display: flex;
+}
+
+.main-navigation .item {
+	padding: 20px 30px;
+}
+
+
+
+/*
+
 
 .contacts p {
 	font-size: 14px;
@@ -144,4 +271,4 @@ h2 {
 
 .footer {
 	color: #ffffff;
-}
+}*/

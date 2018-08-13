@@ -5,48 +5,54 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<div class="page-header-top">
-			<h2 class="logo">техномарт</h2>
-			<form action="#" class="search"><input type="search" value="Поиск"></form>
-			Закладки
-			Корзина
-			Оформить заказ
+			<div class="container">
+				<h2 class="logo">техномарт</h2>
+				<form action="#" class="search"><input type="search" value="Поиск"></form>
+				<ul class="header-top-menu">
+					<li class="top-menu-item"><a href="">Закладки: <span>0</span></a></li>
+					<li class="top-menu-item"><a href="">Корзина: <span>0</span></a></li>
+					<li class="top-menu-item"><a class="green-btn" href="">Оформить заказ</a></li>
+				</ul>
+			</div>
 		</div>
-	  <div class="page-header-middle">
-	  	<p class="about">
-	  		Интернет-магазин
-	  		строительных материалов
-	  		и инструментов для ремонта
-	  	</p>
-	  		  
-	  	<p class="contacts">
-	  		+7 (812) 555-05-55
-	  		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-	  	</p>
-	  		  
-	  	<ul class="user-navigation">
-	  		<li class="item">Войти</li>
-	  		<li class="item">Регистрация</li>
-	  	</ul>
-	  </div>
-		<div class="page-header-bottom">
-		  <ul class="main-navigation">
-		  	<li class="item"><a href="#">Главная</a></li>
-		  	<li class="item"><a href="#">Компания</a></li>
-		  	<li class="item"><a href="#">Каталог</a></li>
-		  	<li class="item"><a href="#">Новости</a></li>
-		  	<li class="item"><a href="#">Спецпредложения</a></li>
-		  	<li class="item"><a href="#">Доставка</a></li>
-		  	<li class="item"><a href="#">Контакты</a></li>
-		  </ul>
-		</div>
+	  	<div class="container">
+	  		<div class="page-header-middle">
+	  		<p class="about">
+	  			Интернет-магазин
+	  			строительных материалов<br>
+	  			и инструментов для ремонта
+	  		</p>
+	  		<p class="contacts">
+	  			<span>+7 (812) 555-05-55</span>
+	  			г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+	  		</p>
+	  		<nav>
+	  			<ul class="user-navigation">
+	  				<li class="item"><a class="user-btn sign-in" href="#">Войти</a></li>
+	  				<li class="item"><a class="user-btn register" href="#">Регистрация</a></li>
+	  			</ul>
+	  		</nav>
+	  		</div>
+			<nav class="page-header-bottom">
+			  <ul class="main-navigation">
+			  	<li class="item"><a href="#">Главная</a></li>
+			  	<li class="item"><a href="#">Компания</a></li>
+			  	<li class="item"><a href="#">Каталог</a></li>
+			  	<li class="item"><a href="#">Новости</a></li>
+			  	<li class="item"><a href="#">Спецпредложения</a></li>
+			  	<li class="item"><a href="#">Доставка</a></li>
+			  	<li class="item"><a href="#">Контакты</a></li>
+			  </ul>
+			</nav>
+	  	</div>
 	</header>
 	<main class="main-content">
-	  <section class="features">
+	  <section class="features container">
 	  	<h2 class="visually-hidden">О нас</h2>
 		  
 		  <ul class="features-list">
@@ -72,8 +78,8 @@
 		  	</li>
 		  </ul>
 	  </section>
-	  <section class="popular">
-	    <h2>популярные товары</h2>
+	  <section class="popular container">
+	    <h2 class="section-header">популярные товары</h2>
 	    <a href="#">все популярные товары</a>
 	    <ul class="popular-list">
 	    	<li class="popular-item">
@@ -94,10 +100,9 @@
 	    	</li>
 	    </ul>
 	  </section>
-	  <section class="brands">
-	    <h2>популярные производители</h2>
+	  <section class="brands container">
+	    <h2 class="section-header">популярные производители</h2>
 	    <a href="#">все производители</a>
-	    
 	    <ul class="brands-list">
 	    	<li class="brands-item">
 	    		<img src="img/" alt="bosch" class="brands-img">
