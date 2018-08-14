@@ -200,8 +200,235 @@ h2 {
 	box-shadow: 0 5px 0 0 #1d2739;
 	color: rgba(255, 255, 255, 0.5);
 }
-/*
 
+.features {
+	padding-top: 59px;
+	padding-bottom: 53px;
+}
+
+.features-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.feature-item {
+	padding-left: 23px;
+	display: flex;
+	flex-direction: column;
+	width: 277px;
+	margin-bottom: 16px;	
+}
+
+.feature-item-right {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.feature-item-header {
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.feature-item a {
+	width: 113px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	line-height: 18px;
+	padding: 11px;
+	border-radius: 3px;
+	margin-bottom: 22px;
+	margin-top: -12px;
+}
+
+.feature-item a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.feature-item a:active {
+	 background-color: rgba(0, 0, 0, 0.3);
+}
+
+.orange {
+	background-color: #ffbf47;
+	position: relative;
+}
+
+.orange::before {
+	content: "";
+	position: absolute;
+	width: 44px;
+	height: 65px;
+	right: 43px;
+	top: 31px;
+	background: url("../svg/icon-1.svg") no-repeat;
+}
+
+.lightblue {
+	background-color: #3bbce3;
+	position: relative;
+}
+
+.lightblue::before {
+	position: absolute;
+	content: "";
+	width: 75px;
+	height: 61px;
+	right: 28px;
+	top: 33px;
+	background: url("../svg/icon-2.svg") no-repeat;
+
+}
+
+.purple {
+	background-color: #dc91d8;
+	position: relative;
+}
+
+.purple::before {
+	position: absolute;
+	content: "";
+	width: 78px;
+	height: 62px;
+	right: 31px;
+	top: 31px;
+	background: url("../svg/icon-3.svg") no-repeat;
+
+}
+
+.lightgreen {
+	background-color: #8ed78f;
+	position: relative;
+}
+
+.lightgreen::before {
+	position: absolute;
+	content: "";
+	width: 59px;
+	height: 72px;
+	right: 45px;
+	top: 26px;
+	background: url("../svg/icon-4.svg") no-repeat;
+
+}
+
+.yellow	{
+	background-color: #ffc047;
+	position: relative;
+}
+
+.yellow::before {
+	position: absolute;
+	content: "";
+	width: 78px;
+	height: 63px;
+	right: 31px;
+	top: 32px;
+	background: url("../svg/icon-5.svg") no-repeat;
+
+}
+
+.feature-slider {
+	padding: 0;
+	order: 1;
+	width: 620px;
+	height: 266px;
+	background-image: url("../img/slider-2.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #ffffff;
+}
+
+.feature-slider h3 {
+	font-size: 36px;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin: 22px 0 4px 24px;
+}
+
+.feature-slider p {
+	margin: 0 25px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.feature-slider-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.btn-pre {
+	position: relative;
+	border: none;
+	cursor: pointer;
+	width: 22px;
+	height: 40px;
+	background-color: transparent;
+	color: transparent;
+}
+
+.btn-pre::before, .btn-pre::after {
+	content: "";
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	width: 22px;
+	height: 40px;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	background: url("../svg/icon-left.svg") no-repeat;
+}
+
+.btn-next {
+	position: relative;
+	border: none;
+	cursor: pointer;
+	width: 22px;
+	height: 40px;
+	background-color: transparent;
+	color: transparent;
+}
+
+.btn-next::before, .btn-next::after {
+	content: "";
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	width: 22px;
+	height: 40px;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	background: url("../svg/icon-right.svg") no-repeat;
+}
+
+.feature-slider .red-button {
+	margin-top: 47px;
+	background-color: #ee3643;
+	width: 195px;
+	margin-left: 25px;
+}
+
+a.red-button:hover {
+	background-color: #ca2c37;
+}
+
+a.red-button:active {
+	background-color: #ba2732;
+}
+/*
 
 .contacts p {
 	font-size: 14px;
@@ -262,25 +489,6 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.item-1 {
-	background-color: #ffbf47;
-}
-
-.item-2 {
-	background-color: #3bbce3;
-}
-
-.item-3 {
-	background-color: #dc91d8;
-}
-
-.item-4 {
-	background-color: #8ed78f;
-}
-
-.item-5 {
-	background-color: #ffc047;
-}
 
 .popular h1,
 .brands h1 {
