@@ -140,14 +140,24 @@ h2 {
 }
 
 .contacts span {
-	padding: 9px 0 9px 40px;
+	padding: 9px 5px 9px 25px;
 	width: 234px;
 	border: 3px solid #ffffff;
 	display: block;
-
+	position: relative;
 	color: #ee3643;
 	font-size: 21px;
 	line-height: 21px;
+}
+
+.contacts span::before {
+	content: "";
+	position: absolute;
+	background: url("../svg/icon-phone.svg") no-repeat;
+	top: 10px;
+	left: 13px;
+	width: 18px;
+	height: 19px;
 }
 
 .user-navigation {
@@ -160,14 +170,29 @@ h2 {
 	font-size: 21px;
 	line-height: 21px;
 	background-color: #ffffff;
-	padding: 8px 23px;
+	padding: 10px 23px;
 	margin: 0;
 	margin-left: 10px;
 }
 
 .user-btn.sign-in {
+	position: relative;
 	padding-left: 46px;
-	margin-left: -30px;
+	margin-left: -40px;
+}
+
+.user-btn.sign-in svg {
+	position: absolute;
+	width: 20px;
+	height: 17px;
+	top: 14px;
+	left: 14px;
+	fill-opacity: 0.3;
+}
+
+a.user-btn.sign-in:hover path {
+	fill: #32425c;
+	fill-opacity: 1;
 }
 
 .user-navigation .user-btn:hover {
