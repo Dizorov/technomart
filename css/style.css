@@ -414,11 +414,23 @@ h2 {
 	background: url("../svg/icon-right.svg") no-repeat;
 }
 
-.feature-slider .red-button {
+.feature-slider a.red-button {
 	margin-top: 47px;
-	background-color: #ee3643;
 	width: 195px;
 	margin-left: 25px;
+}
+
+a.red-button {
+	padding: 11px;
+	background-color: #ee3643;
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	text-align: center;
+	width: 253px;
+
 }
 
 a.red-button:hover {
@@ -427,6 +439,21 @@ a.red-button:hover {
 
 a.red-button:active {
 	background-color: #ba2732;
+}
+
+header.heading-container {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background-color: #f9f5f0;
+	padding: 25px 24px 25px 30px;
+}
+
+.section-header {
+	padding: 0;
+	margin: 0;
 }
 /*
 
