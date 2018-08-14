@@ -455,6 +455,19 @@ header.heading-container {
 	padding: 0;
 	margin: 0;
 }
+
+.popular-item {
+	border: 1px solid #eaeaea;
+	width: 218px;
+}
+
+.popular-item h3 {
+	font-family: "PT Sans Narrow", sans-serif;
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
 /*
 
 .contacts p {
