@@ -136,6 +136,7 @@ h2 {
 	font-size: 14px;
 	line-height: 24px;
 	text-align: center;
+	/*margin-right: -10px;*/
 }
 
 .contacts span {
@@ -159,8 +160,14 @@ h2 {
 	font-size: 21px;
 	line-height: 21px;
 	background-color: #ffffff;
-	padding: 8px 25px;
-	margin: 0 5px;
+	padding: 8px 23px;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.user-btn.sign-in {
+	padding-left: 46px;
+	margin-left: -30px;
 }
 
 .user-navigation .user-btn:hover {
