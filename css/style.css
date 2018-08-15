@@ -16,6 +16,8 @@ a {
 
 ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 h1,
@@ -500,7 +502,6 @@ header.heading-container {
 }
 
 .popular ul.popular-list {
-	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -517,10 +518,6 @@ header.heading-container {
 
 .popular-item:hover {
 	box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
-}
-
-}
-
 }
 
 .popular-item img {
@@ -574,6 +571,36 @@ header.heading-container {
 	padding-left: 34px;
 	padding-top: 22px;
 }
+
+.brands-list {
+	padding-top: 10px;
+	padding-bottom: 85px;
+	width: 960px;
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: -10px;
+}
+
+.brands-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 218px;
+	height: 143px;
+	border: 1px solid #eaeaea;
+	margin: 10px;
+	padding: 0;
+}
+
+.brands-item:hover {
+	box-shadow: 0 9px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.brands-item:active {
+	box-shadow: 0 5px 10px 0px rgba(41, 52, 73, 1);
+	opacity: 0.3;
+}
+
 /*
 
 .contacts p {
