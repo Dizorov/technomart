@@ -704,6 +704,15 @@ header.heading-container {
 	background: url("../img/credit.png") no-repeat 100% 80%;
 }
 
+.credit-tab a.red-button {
+	width: 125px;
+	text-align: center;
+	padding: 11px 35px;
+	margin-top: 15px;
+	float: left;
+	/*background-color: #ff5357;*/
+}
+
 .delivery-tab,
 .guarantee-tab,
 .credit-tab {
