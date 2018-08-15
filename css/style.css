@@ -660,6 +660,14 @@ header.heading-container {
 	background-color: #32425c;
 }
 
+.services-menu label:hover {
+	background-color: #293449;
+}
+
+.services-menu label:hover {
+	background-color: #293449;
+}
+
 .services-menu label:not(:last-child) {
 	border-bottom: 1px solid #4d637b;
 }
@@ -708,6 +716,8 @@ input#tab-3:checked ~ .services-menu label[for="tab-3"] {
 	background-color: #ffffff;
 	color: #32425c;
 }
+
+
 
 input#tab-1:checked ~ .delivery-tab,
 input#tab-2:checked ~ .guarantee-tab,
