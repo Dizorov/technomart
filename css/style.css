@@ -733,6 +733,46 @@ input#tab-2:checked ~ .guarantee-tab,
 input#tab-3:checked ~ .credit-tab {
 	display: block;
 }
+
+.about-technomart {
+	padding-top: 77px;
+	padding-bottom: 86px;
+}
+
+.about-technomart .about-technomart-header {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.about-technomart p {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	padding: 5px 0;
+}
+
+.about-technomart-list-item {
+	/*font-weight: bold;*/
+	font-size: 18px;
+	line-height: 20px;
+	padding-bottom: 23px;
+	padding-left: 36px;
+	position: relative;
+}
+
+.about-technomart-list-item::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-left: 2px solid #ee3643;
+	transform:  translate(-37px, 11px) rotate(90deg);
+	transform-origin: center;
+}
+
 /*
 
 .contacts p {
