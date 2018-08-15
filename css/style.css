@@ -245,7 +245,7 @@ a.user-btn.sign-in:hover path {
 
 .features {
 	padding-top: 59px;
-	padding-bottom: 53px;
+	padding-bottom: 36px;
 }
 
 .features-list {
@@ -463,7 +463,7 @@ a.user-btn.sign-in:hover path {
 }
 
 a.red-button {
-	padding: 11px;
+	padding: 11px 0;
 	background-color: #ee3643;
 	text-transform: uppercase;
 	border-radius: 3px;
@@ -490,17 +490,43 @@ header.heading-container {
 	-ms-align-items: center;
 	align-items: center;
 	background-color: #f9f5f0;
-	padding: 25px 24px 25px 30px;
+	padding: 25px 24px 25px 28px;
 }
 
 .section-header {
 	padding: 0;
 	margin: 0;
+	font-weight: normal;
+}
+
+.popular ul.popular-list {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .popular-item {
 	border: 1px solid #eaeaea;
 	width: 218px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+	margin: 20px 0;
+	background-color: #ffffff;
+}
+
+.popular-item:hover {
+	box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+}
+
+}
+
+.popular-item img {
+	margin: 0 auto;
+	max-width: 218px;
+	max-height: 150px;
 }
 
 .popular-item h3 {
@@ -509,6 +535,44 @@ header.heading-container {
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
+	margin: 0;
+	margin-top: 25px;
+	margin-bottom: 14px;
+}
+
+.popular-item-line-through {
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+	color: #a9a9a9;
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.popular-item-price {
+	margin: 0;
+	margin-left: 42px;
+	margin-bottom: 20px;
+	margin-top: 11px;
+	width: 141px;
+	height: 38px;
+	background: url("../svg/red-button.svg") no-repeat;
+	/*text-align: center;*/
+}
+
+.popular-item a {
+	text-align: center;
+	font-family: "PT Sans", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	padding-left: 34px;
+	padding-top: 22px;
 }
 /*
 
