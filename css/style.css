@@ -16,8 +16,8 @@ a {
 
 ul {
 	list-style: none;
-	padding: 0;
-	margin: 0;
+	/*padding: 0;*/
+	/*margin: 0;*/
 }
 
 h1,
@@ -505,6 +505,8 @@ header.heading-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 }
 
 .popular-item {
@@ -566,11 +568,13 @@ header.heading-container {
 }
 
 .brands-list {
+	padding: 0;
 	padding-top: 10px;
 	padding-bottom: 85px;
 	width: 960px;
 	display: flex;
 	flex-flow: row wrap;
+	margin: 0;
 	margin-left: -10px;
 }
 
@@ -592,6 +596,16 @@ header.heading-container {
 .brands-item:active {
 	box-shadow: 0 5px 10px 0px rgba(41, 52, 73, 1);
 	opacity: 0.3;
+}
+
+.services {
+	background-color: #f4f8f9;
+}
+
+.services p {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	font-weight: 24px;
 }
 
 /*
