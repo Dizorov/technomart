@@ -16,7 +16,7 @@ a {
 
 ul {
 	list-style: none;
-	/*padding: 0;*/
+	padding-left: 0;
 	/*margin: 0;*/
 }
 
@@ -570,7 +570,7 @@ header.heading-container {
 .brands-list {
 	padding: 0;
 	padding-top: 10px;
-	padding-bottom: 85px;
+	padding-bottom: 75px;
 	width: 960px;
 	display: flex;
 	flex-flow: row wrap;
@@ -600,14 +600,120 @@ header.heading-container {
 
 .services {
 	background-color: #f4f8f9;
+	padding-top: 62px;
 }
 
 .services p {
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
-	font-weight: 24px;
+	line-height: 24px;
+	padding: 10px 0;
 }
 
+.services-promo {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.services-menu-container {
+	display: flex;
+}
+
+.services-main-header {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.services-menu-hidden {
+	opacity: 1;
+}
+
+.services-menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+	padding-bottom: 102px;
+}
+
+.services-menu::after {
+	content: "";
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 15px;
+	width: 10px;
+	height: 279px;
+	background: url("../img/shadow.png") no-repeat;
+}
+
+.services-menu label {
+	cursor: pointer;
+	width: 218px;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 13px 0 17px 22px;
+	background-color: #32425c;
+}
+
+.services-menu label:not(:last-child) {
+	border-bottom: 1px solid #4d637b;
+}
+
+.tab {
+	display: none;
+}
+
+.services-tab {
+	width: 620px;
+	max-width: 700px;
+	padding-left: 80px;
+	padding-top: 60px;
+}
+
+.services-tab .services-header {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #32425c;
+	font-size: 36px;
+	line-height: 36px;
+	margin: 0;
+}
+
+.delivery-tab {
+	background: url("../img/delivery.png") no-repeat 100% 80%;
+}
+
+.guarantee-tab {
+	background: url("../img/guarantee.png") no-repeat 100% 80%;
+}
+
+.credit-tab {
+	background: url("../img/credit.png") no-repeat 100% 80%;
+}
+
+.delivery-tab,
+.guarantee-tab,
+.credit-tab {
+	display: none;
+}
+
+input#tab-1:checked ~ .services-menu label[for="tab-1"],
+input#tab-2:checked ~ .services-menu label[for="tab-2"],
+input#tab-3:checked ~ .services-menu label[for="tab-3"] {
+	background-color: #ffffff;
+	color: #32425c;
+}
+
+input#tab-1:checked ~ .delivery-tab,
+input#tab-2:checked ~ .guarantee-tab,
+input#tab-3:checked ~ .credit-tab {
+	display: block;
+}
 /*
 
 .contacts p {
