@@ -556,20 +556,18 @@ header.heading-container {
 	width: 141px;
 	height: 38px;
 	background: url("../svg/red-button.svg") no-repeat;
-	/*text-align: center;*/
-}
-
-.popular-item a {
-	text-align: center;
 	font-family: "PT Sans", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
-	font-weight: bold;
-	text-align: center;
-	vertical-align: middle;
+	font-weight: bold;	
+	padding-top: 10px;
 	padding-left: 34px;
-	padding-top: 22px;
+}
+
+.popular-item a {
+
+
 }
 
 .brands-list {
