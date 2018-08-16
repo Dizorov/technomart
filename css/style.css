@@ -143,7 +143,7 @@ h2 {
 	margin-left: 53px;
 }
 
-.contacts {
+.page-header .contacts {
 	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
@@ -793,6 +793,114 @@ input#tab-3:checked ~ .credit-tab {
 .about-technomart-right .red-button {
 	display: block;
 	width: 100%;
+}
+
+footer.page-footer {
+	background-color: #32425c;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.page-footer-darken-bg {
+	background-color: #293449;
+}
+
+.page-footer-top,
+.page-footer-middle {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-footer .footer-navigation-top,
+.page-footer .footer-navigation-bottom {
+	display: flex;
+}
+
+.page-footer .logo {
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 16px 0;
+}
+
+.page-footer .footer-navigation-top,
+.page-footer .footer-navigation-bottom {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-navigation-top .footer-navigation-top-item {
+	padding-left: 60px;
+	padding-top: 40px;
+}
+
+.page-footer-middle .contacts {
+	margin: 0;
+	margin-top: 18px;
+	padding-top: 12px;
+	padding-bottom: 50px;
+}
+
+.footer-navigation-bottom .footer-navigation-bottom-item {
+	padding-left: 60px;
+	padding-top: 30px;
+	color: #ffd180;
+}
+
+.page-footer-bottom a {
+	color: #ffd180;
+}
+
+.page-footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 35px 0;
+}
+
+.footer-bottom-social {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: 85px;
+	margin-right: 30px;
+}
+
+.footer-bottom-social a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 41px;
+	height: 41px;
+	border-radius: 50%;
+	background-color: #212a3a;
+	margin-right: 5px;
+}
+
+.footer-bottom-social a:hover {
+	background-color: #ee3643;
+}
+
+.page-footer-bottom p {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.page-footer a:hover,
+.page-footer a:focus {
+	text-decoration: underline;
+}
+
+.page-footer a:active {
+	text-decoration: none;
+	opacity: .5;
+}
+
+.page-footer-bottom a:active {
+	color: #ee3643;
+	opacity: 1;
 }
 
 /*
