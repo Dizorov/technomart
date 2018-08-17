@@ -56,6 +56,11 @@ h2 {
 	width: 100%;
 }
 
+.page-header-top .header-top-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
 .top-menu-item a {
 	position: relative;
 	padding: 13px 31px 13px 49px;
@@ -120,11 +125,6 @@ h2 {
 	width: 220px;
 	background-color: #ee3643;
 	box-shadow: 0 5px 0 0 #b52933;
-}
-
-.page-header-top .header-top-menu {
-	display: flex;
-	justify-content: space-between;
 }
 
 .page-header-middle {
