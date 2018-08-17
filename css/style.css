@@ -504,9 +504,10 @@ header.heading-container {
 .popular ul.popular-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	width: 960px;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0;
+	margin-left: -10px;
 }
 
 .popular-item {
@@ -514,7 +515,7 @@ header.heading-container {
 	width: 218px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: bold;
-	margin: 20px 0;
+	margin: 10px;
 	background-color: #ffffff;
 }
 
