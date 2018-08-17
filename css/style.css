@@ -61,9 +61,52 @@ h2 {
 	justify-content: space-between;
 }
 
+.page-header-top form {
+	width: 270px;
+	padding: 0;
+	position: relative;
+}
+
+.page-header-top form svg {
+	position: absolute;
+	content: "";
+	top: 14px;
+	left: 17px;
+	z-index: 1;
+	width: 20px;
+	height: 19px;
+	fill-opacity: 0.3;
+}
+
+.page-header-top .page-header-search::placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+
+.page-header-top .page-header-search {
+	width: 100%;
+	color: #ffffff;
+	border: none;
+	background: transparent;
+	padding: 14px 5px 15px 50px;
+	align-self: flex-start;
+	line-height: 18px;
+	font-size: 17px;
+}
+
+.page-header-top .page-header-search:focus {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.page-header-top .page-header-search:focus + svg path {
+	fill: #ee3643;
+	fill-opacity: 1;
+}
+
 .top-menu-item a {
 	position: relative;
-	padding: 13px 31px 13px 49px;
+	padding: 13px 30px 13px 47px;
 }
 
 .top-menu-item a svg {
@@ -73,7 +116,10 @@ h2 {
 	fill-opacity: 0.3;
 }
 
-.top-menu-item a:hover, .top-menu-item a:hover * {
+.page-header-search:hover,
+.page-header-search:hover ~ svg *,
+.top-menu-item a:hover,
+.top-menu-item a:hover * {
 	background-color: #212a3a;
 	fill-opacity: 1;
 }
@@ -100,16 +146,6 @@ h2 {
 .page-header-top .container{
 	display: flex;
 	justify-content: space-between;
-}
-
-.page-header-top form input {
-	border: none;
-	background: transparent;
-	color: #ffffff;
-	padding: 11px 5px 14px 20px;
-	align-self: flex-start;
-	line-height: 18px;
-	font-size: 17px;
 }
 
 .logo {
