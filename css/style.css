@@ -2,11 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 1200px;
-	line-height: 1em;
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 13px;
-	color: #000000;
-
 }
 
 a {
@@ -23,6 +20,8 @@ ul {
 h1,
 h2 {
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
 }
 
 .section-header {
@@ -52,13 +51,25 @@ h2 {
 	background-color: #32425c;
 	color: #ffffff;
 	font-size: 17px;
+	line-height: 18px;
 	padding: 0;
+	margin: 0;
 	width: 100%;
 }
 
-.page-header-top .header-top-menu {
-	display: flex;
-	justify-content: space-between;
+.logo {
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: center;
+	padding: 0;
+	padding-top: 10px;
+	/*padding-bottom: 8px;*/
+	margin: 0;
+	width: 220px;
+	background-color: #ee3643;
+	box-shadow: 0 5px 0 0 #b52933;
 }
 
 .page-header-top form {
@@ -88,10 +99,10 @@ h2 {
 	color: #ffffff;
 	border: none;
 	background: transparent;
-	padding: 14px 5px 15px 50px;
+	padding: 13px 5px 15px 50px;
 	align-self: flex-start;
-	line-height: 18px;
 	font-size: 17px;
+	line-height: 18px;
 }
 
 .page-header-top .page-header-search:focus {
@@ -104,9 +115,25 @@ h2 {
 	fill-opacity: 1;
 }
 
+.page-header-top .header-top-menu {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	line-height: 18px;
+	width: 450px;
+}
+
+.page-header-top .header-top-menu li {
+	display: flex;
+}
+
 .top-menu-item a {
 	position: relative;
 	padding: 13px 30px 13px 47px;
+	flex-basis: 150px;
+	line-height: 18px;
 }
 
 .top-menu-item a svg {
@@ -130,7 +157,9 @@ h2 {
 }
 
 .page-header-top .green-btn {
+	display: inline-flex;
 	padding: 13px 20px;
+	line-height: 18px;
 	background-color: #63a63e;
 }
 
@@ -148,27 +177,11 @@ h2 {
 	justify-content: space-between;
 }
 
-.logo {
-	font-size: 24px;
-	line-height: 24px;
-	color: #ffffff;
-	font-weight: normal;
-	text-align: center;
-
-	padding-top: 10px;
-	padding-bottom: 8px;
-	margin: 0;
-	width: 220px;
-	background-color: #ee3643;
-	box-shadow: 0 5px 0 0 #b52933;
-}
-
 .page-header-middle {
 	padding-top: 46px;
 	display: flex;
 	justify-content: space-between;
 }
-
 
 .about {
 	color: #ee3643;
