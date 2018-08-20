@@ -270,6 +270,7 @@ a.user-btn.sign-in:hover path {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 35px;
+	margin-bottom: 0;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
