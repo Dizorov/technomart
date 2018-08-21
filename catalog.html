@@ -72,10 +72,14 @@
 	
 	<main class="container">
 		<ul class="breadcrumbs">
-			<li><a href="#">Главная</a></li>
+			<li>
+				<a href="#" aria-label="Главная">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg>
+				</a>
+			</li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
-			<li>Перфораторы</li>
+			<li><a>Перфораторы</a></li>
 		</ul>
 		<header class="heading-container">
 			<h2 class="section-header">перфораторы</h2>
@@ -84,13 +88,59 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<header class="filters-header">
-					<h3>Фильтр:</h3>
+					<p>Фильтр:</p>
 				</header>
+				<form class="filters-form" method="GET">
+					<h3>Цена:</h3>
+					<p class="filters-range">
+						<label for="cost">
+							<input type="range" name="cost" class="filters-cost" min="0" max="32000" value="30000" multiple>
+						</label>
+					</p>
+					<p class="cost-range"><span>0</span> - <span>30000</span></p>
+					<hr>
+					<h3>Производители:</h3>
+					<div class="filter-checkbox-container">
+						<p>
+							<input type="checkbox" class="visually-hidden filters-checkbox" name="bosch" id="bosch" checked>
+							<label for="bosch">bosch</label>
+						</p>
+						<p>
+							<input type="checkbox" class="visually-hidden filters-checkbox" name="interskol" id="interskol">
+							<label for="interskol">интерскол</label>
+						</p>
+						<p>
+							<input type="checkbox" class="visually-hidden filters-checkbox" name="makita" id="makita" checked>
+							<label for="makita">makita</label>
+						</p>
+						<p>
+							<input type="checkbox" class="visually-hidden filters-checkbox" name="dewalt" id="dewalt">
+							<label for="dewalt">dewalt</label>
+						</p>
+						<p>
+							<input type="checkbox" class="visually-hidden filters-checkbox" name="hitachi" id="hitachi">
+							<label for="hitachi">hitachi</label>
+						</p>
+					</div>
+					<hr>
+					<h3>Питание:</h3>
+					<div class="filter-radio-container">
+						<p>
+							<input type="radio" name="power" class="visually-hidden" id="accum" checked>
+							<label for="accum">Аккумуляторные</label>
+						</p>
+						<p>
+							<input type="radio" name="power" class="visually-hidden" id="net">
+							<label for="net">Сетевыe</label>
+						</p>
+					</div>
+					<input type="submit" class="submit-button" value="Показать">
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Список товаров</h2>
 				<header class="catalog-header">
-					<h3>Сортировка:</h3>
+					<p>Сортировка:</p>
 					<ul class="catalog-sort">
 						<li><a href="#">По цене</a></li>
 						<li><a href="#">По списку</a></li>
@@ -120,7 +170,7 @@
 				    			25500 Р.
 				    		</p>
 				    	</li>
-				    	<li class="catalog-item">
+				    	<li class="catalog-item new">
 				    		<img src="img/bfg2000.jpg" width="218" height="150">
 				    		<h3>
 				    			Перфоратор BOSCH <br>
@@ -142,7 +192,7 @@
 				    			15500 Р.
 				    		</p>
 				    	</li>
-				    	<li class="catalog-item">
+				    	<li class="catalog-item new">
 				    		<img src="img/bfg6000.jpg" width="218" height="150">
 				    		<h3>
 				    			Перфоратор BOSCH <br>
@@ -164,7 +214,7 @@
 				    			12500 Р.
 				    		</p>
 				    	</li>
-				    	<li class="catalog-item">
+				    	<li class="catalog-item new">
 				    		<img src="img/bfg3000.jpg" width="218" height="150">
 				    		<h3>
 				    			Перфоратор BOSCH <br>
@@ -199,10 +249,10 @@
 				    	</li>
 			    	</ul>
 			    	<ul class="pagination">
-			    		<li class="pagination-button"><a href="#">1</a></li>
+			    		<li class="pagination-button pagination-button-current"><a href="#">1</a></li>
 			    		<li class="pagination-button"><a href="#">2</a></li>
 			    		<li class="pagination-button"><a href="#">3</a></li>
-			    		<li class="pagination-button"><a href="#">Следующая</a></li>
+			    		<li class="pagination-button next"><a href="#">Следующая</a></li>
 			    	</ul>
 			</section>
 		</div>
