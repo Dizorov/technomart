@@ -319,9 +319,41 @@
     </div>
 	</footer>
 
-	
+	<section class="modal modal-write-us">
+
+		<button class="modal-write-us-close"></button>
+
+		<form method="POST" action="index.html">
+			<div class="modal-write-us-container">
+				<div class="write-us-left-column">
+					<p>
+						<label>Ваше имя:</label>
+					</p>
+					<p>
+						<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+					</p>
+				</div>
+				<div class="write-us-right-column">
+					<p>
+						<label>Ваш email:</label>
+					</p>
+					<p>
+						<input type="email" name="email" placeholder="Для отправки ответа">
+					</p>
+				</div>
+				<div class="write-us-bottom-column">
+					<p>
+						<label>Текст письма:</label>
+					</p>
+					<textarea name="mail-message" cols="60" rows="4" placeholder="В свободной форме"></textarea>
+				</div>
+			</div>
+			<div class="modal-write-us-footer">
+				<input type="submit" name="submit" value="отправить" class="red-button">
+			</div>
+		</form>
+	</section>
 
 	<script type="text/javascript" src="js/popup.js"></script>
-
 </body>
 </html>

@@ -511,13 +511,13 @@ a.user-btn.sign-in:hover path {
 	background: url("../svg/icon-right.svg") no-repeat;
 }
 
-.feature-slider a.red-button {
+.feature-slider .red-button {
 	margin-top: 47px;
 	width: 195px;
 	margin-left: 25px;
 }
 
-a.red-button {
+.red-button {
 	padding: 11px 0;
 	background-color: #ee3643;
 	text-transform: uppercase;
@@ -530,11 +530,11 @@ a.red-button {
 
 }
 
-a.red-button:hover {
+.red-button:hover {
 	background-color: #ca2c37;
 }
 
-a.red-button:active {
+.red-button:active {
 	background-color: #ba2732;
 }
 
@@ -1221,6 +1221,116 @@ footer.page-footer {
 	color: #ffffff;
 }
 
+.modal {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-write-us {
+	box-sizing: border-box;
+	width: 620px;
+	border-top: 7px solid #ee3643;
+}
+
+.modal-write-us form,
+.modal-write-us p {
+	padding: 0;
+	margin: 0;
+}
+
+.modal-write-us form {
+	background-color: #ffffff;
+	padding-top: 45px;
+}
+
+.modal-write-us-container {
+	width: 460px;
+	margin: 0 auto 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.write-us-left-column {
+	margin: 0;
+	width: 220px;
+}
+
+.write-us-right-column {
+	width: 220px;
+	margin: 0;
+}
+
+.write-us-bottom-column {
+	margin-top: 10px;
+}
+
+.modal-write-us label {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.modal-write-us input[name="name"],
+.modal-write-us input[name="email"],
+.modal-write-us textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 6px 13px 10px;
+	margin: 10px 0;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.modal-write-us input[name="name"]:hover,
+.modal-write-us input[name="email"]:hover,
+.modal-write-us textarea:hover {
+	border-color: #b5b5b5;
+}
+
+.modal-write-us input[name="name"]:focus,
+.modal-write-us input[name="email"]:focus,
+.modal-write-us textarea:focus {
+	border-color: #ee3643;
+}
+
+.modal-write-us-footer {
+	width: 620px;
+	text-align: center;
+	background-color: #f4f4f4;
+}
+
+.modal-write-us-footer input[type="submit"] {
+	border: none;
+	width: 460px;
+	margin: 37px auto;
+}
+
+.modal-write-us-close {
+	border: none;
+	cursor: pointer;
+
+	position: absolute;
+	right: 9px;
+	top: 9px;
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../svg/form-2.svg);
+}
 
 /*
 
