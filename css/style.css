@@ -1232,6 +1232,10 @@ footer.page-footer {
 	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.75);
 }
 
+.modal-show {
+	display: block;
+}
+
 .modal-write-us {
 	box-sizing: border-box;
 	width: 620px;
