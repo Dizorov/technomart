@@ -6,6 +6,11 @@ body {
 	font-size: 13px;
 }
 
+:focus {
+	outline: 2px solid #30aaff;
+	border-radius: inherit;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -1230,10 +1235,18 @@ footer.page-footer {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.75);
+	transition: opacity .5s;
 }
 
 .modal-show {
 	display: block;
+	animation-name: show;
+	animation-duration: .4s;
+}
+
+@keyframes show {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 .modal-write-us {
@@ -1307,6 +1320,7 @@ footer.page-footer {
 .modal-write-us input[name="name"]:focus,
 .modal-write-us input[name="email"]:focus,
 .modal-write-us textarea:focus {
+	outline: none;
 	border-color: #ee3643;
 }
 
