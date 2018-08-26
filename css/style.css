@@ -967,22 +967,21 @@ footer.page-footer {
 	line-height: 18px;
 }
 
-.breadcrumbs {
+p.breadcrumbs {
 	text-transform: uppercase;
 	font-family: "PT Sans", "Arial", sans-serif;
-	display: flex;
-	align-items: center;
 	margin: 20px 0;
 }
 
-.breadcrumbs li:first-child {
-	font-size: 0;
-	width: 15px;
+.breadcrumbs img {
+	width: 8px;
 	height: 12px;
+	margin: 0 16px;
 }
 
-.breadcrumbs li {
-	padding-right: 38px;
+.breadcrumbs a:first-child {
+	width: 15px;
+	height: 12px;
 }
 
 .inner-page .catalog-container {
