@@ -244,6 +244,29 @@ h2 {
 	margin-left: 10px;
 }
 
+.user-navigation-logged .user-btn {
+	padding: 11px 15px;
+}
+
+.user-navigation-logged .user-btn svg {
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+
+.user-navigation-logged .user-btn span {
+	margin: 0;
+	padding-left: 15px;
+	padding-right: 40px;
+}
+
+.user-navigation-logged .user-btn:hover * {
+	fill: #32425c;
+}
+
+.user-navigation-logged .user-btn:active * {
+	fill: #c5c5c5;
+}
+
 .user-btn.sign-in {
 	position: relative;
 	padding-left: 46px;
