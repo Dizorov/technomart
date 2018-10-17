@@ -1,6 +1,6 @@
-var writeUs = document.querySelector('.modal-write-us');
-var writeUsOpen = document.querySelector('.modal-write-us-open');
-var writeUsClose = document.querySelector('.modal-write-us-close');
+var writeUs = document.querySelector('.modal-write-us'),
+    writeUsOpen = document.querySelector('.modal-write-us-open'),
+    writeUsClose = document.querySelector('.modal-write-us-close');
 
 writeUsOpen.addEventListener('click', function(evt) {
 	evt.preventDefault();
