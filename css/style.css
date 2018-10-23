@@ -197,7 +197,7 @@ h2 {
 	line-height: 23px;
 	font-style: italic;
 	width: 200px;
-	margin-left: 53px;
+	margin: 12px 0 12px 53px;
 }
 
 .page-header .contacts {
@@ -298,7 +298,7 @@ a.user-btn.sign-in:hover path {
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 35px;
+	margin-top: 30px;
 	margin-bottom: 0;
 	color: #ffffff;
 	font-size: 17px;
@@ -1134,6 +1134,7 @@ p.breadcrumbs {
 
 .catalog .catalog-header {
 	display: flex;
+	justify-content: space-between;
 }
 
 .filters-header p,
@@ -1149,8 +1150,51 @@ p.breadcrumbs {
 
 .catalog .catalog-sort {
 	display: flex;
+	justify-content: space-between;
+	width: 353px;
 	margin: 0;
 	padding: 0;
+	padding-right: 40px;
+}
+
+.catalog-sort-item-link {
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #ee3643;
+}
+
+.catalog-sort-item-link-current {
+	color: #ee3643;
+	border-bottom: none;
+}
+
+.catalog-sort-item-link:hover {
+	color: rgba(0, 0, 0, 1);
+	border-bottom: 1px solid #ee3643;
+}
+
+.catalog-sort-order {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+
+	width: 45px;
+	max-height: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-sort-order-icon * {
+	fill: #c5c5c5;
+}
+
+.catalog-sort-order-icon-current * {
+	fill: #ee3643;
+}
+
+.catalog-sort-order-icon:hover * {
+	fill: #231f20;
 }
 
 .catalog ul.catalog-list {
