@@ -7,7 +7,7 @@ body {
 }
 
 :focus {
-	outline: 2px solid #30aaff;
+	outline: 1px dotted #30aaff;
 	border-radius: inherit;
 }
 
@@ -592,6 +592,7 @@ header.heading-container {
 }
 
 .popular-item {
+	position: relative;
 	border: 1px solid #eaeaea;
 	width: 218px;
 	font-family: "PT Sans", sans-serif;
@@ -1162,6 +1163,7 @@ p.breadcrumbs {
 }
 
 .catalog-item {
+	position: relative;
 	border: 1px solid #eaeaea;
 	width: 218px;
 	font-family: "PT Sans", sans-serif;
@@ -1170,8 +1172,102 @@ p.breadcrumbs {
 	background-color: #ffffff;
 }
 
+.catalog-item-hover {
+	box-sizing: border-box;
+	position: absolute;
+	display: none;
+	width: 218px;
+	max-height: 150px;
+	padding: 45px 0;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.catalog-item-button-buy,
+.catalog-item-button-to-bookmarks {
+	width: 135px;
+	margin-bottom: 7px;
+	border: none;
+	font-family: "Cuprum", sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: #ffffff;
+}
+
+.catalog-item-button-buy {
+	box-sizing: border-box;
+	position: relative;
+	padding: 10px 45px 10px 50px;
+	font-style: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #63a63e;
+	box-shadow: inset 0 -3px 0 #367315;
+}
+
+.catalog-item-button-buy::before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 12px;
+	width: 15px;
+	height: 15px;
+	background-image: url("../svg/icon-cart.svg");
+	background-repeat: no-repeat;
+	opacity: .3;
+}
+
+.catalog-item-button-buy:hover {
+	background-color: #5fbb2d;
+}
+
+.catalog-item-button-buy:active {
+	background-color: #518534;
+	box-shadow: none;
+}
+
+.catalog-item-button-buy:hover::before,
+.catalog-item-button-buy:active::before {
+	opacity: 1;
+}
+
+.catalog-item-button-to-bookmarks {
+	box-sizing: border-box;
+	padding: 7px 0;
+	color: #32425c;
+	text-align: center;
+	border: 3px solid #63a63e;
+}
+
+.catalog-item-button-to-bookmarks:hover {
+	border-color: #32425c;
+}
+
+.catalog-item-button-to-bookmarks:active {
+	opacity: .3;
+}
+
+.catalog-item.new::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	right: 0;
+	background-image: url("../img/new-flag.png");
+	background-repeat: no-repeat;
+}
+
 .catalog-item:hover {
 	box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-item:hover .catalog-item-hover,
+.catalog-item:hover .catalog-item-hover {
+	display: block;
 }
 
 .catalog-item img {
