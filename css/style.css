@@ -1477,6 +1477,7 @@ p.breadcrumbs {
 .modal-write-us input[name="email"]:hover,
 .modal-write-us textarea:hover {
 	border-color: #b5b5b5;
+	box-shadow: none;
 }
 
 .modal-write-us input[name="name"]:focus,
@@ -1484,6 +1485,7 @@ p.breadcrumbs {
 .modal-write-us textarea:focus {
 	outline: none;
 	border-color: #ee3643;
+	box-shadow: none;
 }
 
 .modal-write-us-footer {
