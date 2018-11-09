@@ -601,7 +601,8 @@ header.heading-container {
 	background-color: #ffffff;
 }
 
-.popular-item:hover {
+.popular-item:hover,
+.popular-item:focus {
 	box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
@@ -1305,12 +1306,16 @@ p.breadcrumbs {
 	background-repeat: no-repeat;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
 	box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .popular-item:hover .catalog-item-hover,
-.catalog-item:hover .catalog-item-hover {
+.catalog-item:hover .catalog-item-hover,
+.popular-item:focus .catalog-item-hover,
+.catalog-item:focus .catalog-item-hover,
+.catalog-item-hover:focus {
 	display: block;
 }
 
